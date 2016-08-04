@@ -2,7 +2,6 @@
 
 import sys
 
-
 arr = []
 summa = []
 for arr_i in xrange(6):

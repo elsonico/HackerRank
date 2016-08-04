@@ -2,7 +2,6 @@
 
 import sys
 
-
 n = int(raw_input().strip())
 
 wrote="false"
