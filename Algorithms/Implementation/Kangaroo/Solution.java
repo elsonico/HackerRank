@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Solution {
 	/* There certainly is more elegant solution than mine.
-	You could check (x2-x1)%(v1-v2) /*
+	You could check (x2-x1)%(v1-v2) */
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
