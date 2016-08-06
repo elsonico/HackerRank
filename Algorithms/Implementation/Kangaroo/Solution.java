@@ -1,6 +1,9 @@
 import java.util.*;
 
 public class Solution {
+	/* There certainly is more elegant solution than mine. I implemented this following rule
+	make it work first, then make it fast and after the make it elegant :)
+	Elegant way would be to check (x2-x1)%(v1-v2) */
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
