@@ -1,4 +1,0 @@
-# Your code here
-def full_name(first,*rest)
-    rest.reduce(first) {|f,l| fullname.concat(" #{l}")}
-end
