@@ -1,0 +1,14 @@
+#!/usr/bin/ruby
+def skip_animals(animals, skip)
+  # Your code here
+    arr = []
+    animals.each_with_index do |item, index|
+        if index >= skip
+            break
+        end
+        arr.push("#{index}:#{item}")        
+    end
+    arr
+end
+
+skip_animals(['leopard', 'bear', 'fox', 'wolf'], 2)
