@@ -6,7 +6,7 @@ declare -a $countries
 i=1
 
 while read -r line
-  do
+do
     countries[$i]=$line
     let i=i+1
 done
@@ -14,9 +14,9 @@ done
 j=0
 
 for (( i=0 ; $i < ${#countries[@]}; i++ ))
-  do
+do
     if  ! `echo ${countries[$i]} | grep -qi a`
-      then
+    then
         ocountries[j]=${countries[$i]}
         let j=j+1
     fi

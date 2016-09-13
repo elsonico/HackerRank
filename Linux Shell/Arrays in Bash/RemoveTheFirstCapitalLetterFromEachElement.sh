@@ -2,14 +2,14 @@
 i=0
 
 while read -r line
-  do
+do
     countries[$i]=$line
     let i=i+1
 done
 
 
 for (( i=0 ; $i < ${#countries[@]}; i++ ))
-  do
+do
     ocountries[i]=`echo ${countries[$i]} | sed "s/^[A-Z]/\./g"`
 done
 

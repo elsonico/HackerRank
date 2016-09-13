@@ -4,13 +4,16 @@ read x
 read y
 
 if [ $x -lt $y ]
-  then echo "X is less than Y"
+then
+    echo "X is less than Y"
 fi
 
 if [ $x -gt $y ]
-  then echo "X is greater than Y"
+then
+    echo "X is greater than Y"
 fi
 
 if [ $x -eq $y ]
-  then echo "X is equal to Y"
+then
+    echo "X is equal to Y"
 fi

@@ -6,17 +6,17 @@ k=0
 l=0
 
 for number in $array
-  do
+do
     numbers[$i]=$number
     let i=i+1
 done
 
 for (( i=0 ; i < ${#numbers[@]}; i++ ))
-  do
+do
     for (( j=0 ; j < ${#numbers[@]}; j++ ))
-      do
+    do
         if (( ${numbers[i]} == ${numbers[j]} )) && (( i != j))
-          then
+        then
             mindex[k]=$i
             let k=k+1
         fi
@@ -27,21 +27,21 @@ done
 printnum="true"
 
 for (( i=0 ; i < ${#numbers[@]} ; i++))
-  do
+do
     for (( j=0 ; j < ${#mindex[@]} ; j++ ))
-      do
+    do
         if (( $i == ${mindex[$j]} ))
-          then
+        then
             printnum="false"
-         fi
-      done
-     if [ $printnum == "true" ]
-       then
-         ones[$k]=${numbers[$i]}
-         let k=k+1
-     else
-       printnum="true"
-     fi
+        fi
+    done
+    if [ $printnum == "true" ]
+    then
+        ones[$k]=${numbers[$i]}
+        let k=k+1
+    else
+        printnum="true"
+    fi
 done
 
 echo ${ones[@]}
