@@ -6,7 +6,7 @@ def pairs(a,k):
     count = 0
     i = 0
     j = 1
-    while j < n:        
+    while j < n:
         dif = slist[j]-slist[i]
         if dif == k:
             count = count + 1
